@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.card {
+    text-align: left;
+    width: 350px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-family: 'Karla', sans-serif;
+}
+
+h2 span {
+    color: #4ADF86;
+}
+
+p {
+    color: #D5D4D8;
+    margin-top: 8px;
+    margin-bottom: 75px;
+}
+
+.generate-btn {
+    background-color: #10B981;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.generate-btn:hover {
+    background-color: #0E9F6E;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2F3E53;
+    margin: 25px 0;
+}
+
+.password-boxes {
+    display: flex;
+    gap: 15px;
+}
+
+.password-display {
+    background-color: #273549;
+    color: #55F991;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+}
