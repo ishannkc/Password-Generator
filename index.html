@@ -14,11 +14,21 @@
         <div class="card">
             <h2>Generate a <br><span>random password</span></h2>
             <p>Never use an insecure password again.</p>
-        
-            <div class="setcharacter">
+
+
+             <div class="setcharacter">
                 <label for="characters">Set Character:</label>
                 <input id = "characters-el" type="number" max="15">
             </div>
+
+            <div class="options">
+                <label><input type="checkbox" checked id="letters-el">Letters</label>
+                <label><input type="checkbox" checked id="numbers-el">Numbers</label>
+                <label><input type="checkbox" checked id="symbols-el">Symbols</label>
+            </div>
+        
+            
+
             <button class="generate-btn" onclick="generatePasswords()">Generate passwords</button>
         
             <hr>
