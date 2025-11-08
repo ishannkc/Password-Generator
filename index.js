@@ -22,6 +22,10 @@ function generatePasswords(){
 
 // parseInt(    .value), gives numeric value of a string
     let passwordLength = parseInt(charactersEl.value)
+    if(passwordLength <= 0){
+        alert("Please select a valid length!")
+        return
+    }
     
     //initially all the boxes are checked
     const lettersEl = document.getElementById('letters-el').checked
