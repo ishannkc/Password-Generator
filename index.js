@@ -11,14 +11,15 @@
     let charactersEl = document.getElementById('characters-el')
 
 
-//initially all the boxes are checked
-const lettersEl = document.getElementById('letters-el').checked
-const numbersEl = document.getElementById('numbers-el').checked
-const symbolsEl = document.getElementById('symbols-el').checked
+
+    //initially all the boxes are checked
+    const lettersEl = document.getElementById('letters-el').checked
+    const numbersEl = document.getElementById('numbers-el').checked
+    const symbolsEl = document.getElementById('symbols-el').checked
 
 
 function generatePasswords(){
-    clearPasswords()
+     clearPasswords()
 
 // parseInt(    .value), gives numeric value of a string
     let passwordLength = parseInt(charactersEl.value)
@@ -68,6 +69,15 @@ function generatePasswords(){
 function clearPasswords(){
     randomEl1.textContent=""
     randomEl2.textContent=""
+}
+
+function CopytoClick1(){
+    navigator.clipboard.writeText(randomEl1.textContent)
+    alert("Password1 copied!")
+}
+function CopytoClick2(){
+    navigator.clipboard.writeText(randomEl2.textContent)
+    alert("Password2 copied!")
 }
 
 

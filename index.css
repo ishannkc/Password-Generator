@@ -59,6 +59,7 @@ p {
 
 .generate-btn:hover {
     background-color: #0E9F6E;
+    color: rgb(221, 220, 220)
 }
 
 hr {
@@ -81,6 +82,11 @@ hr {
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 0.9rem;
+    cursor: pointer;
+}
+.password-display:hover{
+   color: #0E9F6E;
+   background-color: #151d28;;
 }
 .setcharacter {
     display: flex;
