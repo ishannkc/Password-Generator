@@ -4,10 +4,15 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let randomEl1 = document.getElementById('random1-el')
 let randomEl2 = document.getElementById('random2-el')
-let passwordLength = 15
+let charactersEl = document.getElementById('characters-el')
+
 
 function generatePasswords(){
     clearPasswords()
+
+// parseInt(    .value), gives numeric value of a string
+    let passwordLength = parseInt(charactersEl.value)
+
     for(let i =0; i<passwordLength; i++){ 
 
         let randompw1 = Math.floor (Math.random() * (characters.length))
@@ -17,6 +22,7 @@ function generatePasswords(){
     }
    
 }
+
 
 function clearPasswords(){
     randomEl1.textContent=""
